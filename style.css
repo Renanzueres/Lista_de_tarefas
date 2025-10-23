@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: #f8f9fa;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+li button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+li span {
+    flex: 1;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+li.done span {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* NOVO: Container para os botões de ação da tarefa (Melhoria 1a) */
+.task-buttons {
+    display: flex;
+    gap: 5px; 
+}
+
+li .edit-btn {
+    background-color: #007bff; 
+}
+li .edit-btn:hover {
+    background-color: #0056b3;
+}
+
+li .save-btn {
+    background-color: #28a745; 
+}
+li .save-btn:hover {
+    background-color: #218838;
+}
+
+li span[contentEditable="true"] {
+    background-color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    padding-left: 5px;
+    outline: none;
+}
+
+/* NOVO: Estilo do botão "Limpar Concluídas" (Melhoria 1b) */
+#clearCompletedButton {
+    background-color: #6c757d; 
+    width: 100%;
+    margin-top: 20px;
+}
+#clearCompletedButton:hover {
+    background-color: #5a6268;
+}
+
+#empty-state {
+    text-align: center;
+    color: #888;
+    padding: 20px 0;
+    margin: 0;
+}
